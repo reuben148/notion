@@ -5,7 +5,7 @@ import { Button, Footer } from "./Containers";
 
 function App() {
   return (
-    <div className="bg-blue-200">
+    <div className="">
       <Navbar />
       <Header />
       <Button />
