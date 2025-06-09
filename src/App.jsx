@@ -8,8 +8,8 @@ function App() {
     <div className="bg-blue-200">
       <Navbar />
       <Header />
-      <Blog />
       <Button />
+      <Blog />
       <Footer />
     </div>
   );
