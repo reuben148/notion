@@ -33,7 +33,10 @@ function Signup() {
         {/* Password rules */}
         <div className="border mt-5 rounded-[10px] bg-blue-100 border-blue-100 px-2 py-2">
           <div className="flex gap-2 mb-1">
-            <i className="fa fa-info-circle text-xs mt-1" aria-hidden="true"></i>
+            <i
+              className="fa fa-info-circle text-xs mt-1"
+              aria-hidden="true"
+            ></i>
             <p className="text-sm">Password must contain at least:</p>
           </div>
           <div className="flex gap-2 mb-1">
@@ -59,6 +62,21 @@ function Signup() {
         </button>
 
         <hr className="mt-10" />
+
+        <div className="flex py-10 gap-1 justify-center">
+          <p className="">have an account?</p>
+          <p className="text-blue-500 decoration-double font-serif">
+            Login here
+          </p>
+        </div>
+
+        <div>
+          <p className="text-sm">
+            By clicking "Continue with Google/Facebook/Email & Password" above,
+            you acknowledge that you have read and understood, and agree to
+            Station's Terms & Conditions and Privacy Policy.
+          </p>
+        </div>
       </div>
     </div>
   );
