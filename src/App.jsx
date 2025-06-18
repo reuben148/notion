@@ -6,12 +6,13 @@ import { Button, Footer } from "./Containers";
 
 function App() {
   return (
-    <div className="bg-[#008287]">
+    <div className="">
       <Navbar />
       <Header />
       <Button />
       <Blog />
       <Footer />
+      <Signup />
     </div>
   );
 }
