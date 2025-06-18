@@ -7,14 +7,24 @@ import { Button, Footer } from "./Containers";
 
 function App() {
   return (
-    <div className="">
+    <Router>
       <Navbar />
-      <Header />
-      <Button />
-      <Blog />
-      <Footer />
-      <Signup />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Button />
+              <Blog />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
