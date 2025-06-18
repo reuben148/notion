@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
@@ -57,11 +58,13 @@ function Signup() {
           </div>
         </div>
 
-        <button className="text-sm border h-[50px] w-full rounded-[10px] text-white bg-black border-black mt-3">
-          Continue
-        </button>
+        <Link to="/home">
+          <button className="text-sm border h-[50px] w-full rounded-[10px] text-white bg-black border-black mt-3">
+            Continue
+          </button>
+        </Link>
 
-        <hr className="mt-10" />
+        <hr className="mt-5" />
 
         <div className="flex py-10 gap-1 justify-center">
           <p className="">have an account?</p>

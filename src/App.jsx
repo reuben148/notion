@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./Pages/Signup";
-import Login from "./Pages/Login";
+import Home from "./Pages/Home";
 import { Header, Navbar, Blog } from "./Contents";
 import { Button, Footer } from "./Containers";
 
@@ -22,7 +22,7 @@ function App() {
           }
         />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   );
